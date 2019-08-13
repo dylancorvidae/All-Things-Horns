@@ -4,11 +4,17 @@ import renderImage from './render-image.js';
 
 const animalList = document.getElementById('animal-cards');
 
-//loop through the list
 images.forEach(animal => {
     const html = renderImage(animal);
     const dom = htmlToDom(html);
     animalList.appendChild(dom);
 });
-//create dom
-//append dom
+
+const animalCard = document.getElementsByClassName('animal-card');
+
+[...animalCard].forEach((card) => {
+    card.addEventListener('mouseover', () => {
+        const description = document.getElementById('description');
+        description.classList.remove('hidden');
+    });
+});
