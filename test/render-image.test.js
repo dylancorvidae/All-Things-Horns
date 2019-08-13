@@ -14,13 +14,12 @@ test('renders html from data', assert => {
     };
 
     const expected = /*html*/`
-    <li id="hornies">
+    <li title="A unicorn and a narwhal nuzzling their horns" id="hornies">
         <div>
             <h2>UniWhal</h2>
             <h3>1 Horn</h3>
         </div>
         <img src="http://3.bp.blogspot.com/_DBYF1AdFaHw/TE-f0cDQ24I/AAAAAAAACZg/l-FdTZ6M7z8/s1600/Unicorn_and_Narwhal_by_dinglehopper.jpg">
-        <p>A unicorn and a narwhal nuzzling their horns</p>
     </li>
     `;
 
