@@ -43,6 +43,12 @@ header>img {
     margin-right: 25px;
 }
 
+.custom-select {
+    display: block;
+    font-size: 1.1em;
+    color: 
+}
+
 main {
     display: flex;
     flex-direction: column;
