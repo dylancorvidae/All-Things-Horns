@@ -1,5 +1,7 @@
 import Component from './Component.js';
 import Header from './Header.js';
+import AnimalList from './AnimalList.js';
+import image from './data/images.js';
 
 class App extends Component {
 
@@ -7,7 +9,13 @@ class App extends Component {
         const header = new Header();
         const headerDom = header.renderDOM();
         dom.prepend(headerDom);
+
+        const props = { animal: image };
+        const animalList = new AnimalList(props);
+        const animalListDOM = animalList.renderDOM();
+        dom.appendChild(animalListDOM);
     }
+
 
     renderHTML() {
         return /*HTML*/`
