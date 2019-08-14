@@ -1,11 +1,25 @@
-import images from './data/images.js';
-import htmlToDom from './html-to-DOM.js';
-import renderImage from './render-image.js';
+import Component from './Component.js';
+import Header from './Header.js';
 
-const animalList = document.getElementById('animal-cards');
+class App extends Component {
 
-images.forEach(animal => {
-    const html = renderImage(animal);
-    const dom = htmlToDom(html);
-    animalList.appendChild(dom);
-});
+    onRender(dom) {
+        const header = new Header();
+        const headerDom = header.renderDOM();
+        dom.prepend(headerDom);
+    }
+
+    renderHTML() {
+        return /*HTML*/`
+            <div>
+
+                <main>
+                    <section id="filter" class="roboto"></section>
+                    <section id="animal-list" class="roboto"></section>
+                </main>
+            </div>
+        `;
+    }
+}
+
+export default App;

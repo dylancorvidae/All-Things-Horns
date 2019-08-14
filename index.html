@@ -5,45 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>All Things Horns</title>
-    <link rel="stylesheet" href="./src/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/main.css">
 </head>
 <body>
-    <header>
-        <img src="https://africanvoices.com/avblog/wp-content/uploads/2016/02/shofarhorn.jpg" alt="horn logo">
-        <h1>All Things Horns</h1>
-    </header>
-    <main>
-        <section id="filter" class="roboto">
-            <label for="keyword">Filter by Keyword</label>
-            <select id="keyword" class="custom-select">
-                <option value ="all">Show All</option>
-                <option value ="narwhal">Narwhal</option>
-                <option value ="rhino">Rhino</option>
-                <option value ="unicorn">Unicorn</option>
-                <option value ="unilego">Unilego</option>
-                <option value ="triceratops">Triceratops</option>
-                <option value ="markhor">Markhor</option>
-                <option value ="mouflon">Mouflon</option>
-                <option value ="addax">Addax</option>
-                <option value ="chameleon">Chameleon</option>
-                <option value ="lizard">Lizard</option>
-                <option value ="dragon">Dragon</option>
-            </select>
-            <div>
-                <label for="filter-one">Title</label>
-                <input id="filter-one" type="radio" name="filter" value="title">
-                <label for="filter-two"># Horns</label>
-                <input id="filter-two" type="radio" name="filter" value="num-horn">
-            </div>
-        </section>
-        <section class="roboto">
-            <ul id="animal-cards"></ul>
-        </section>
-    </main>
-    <footer>
-        <h3>&copy DylanJoe Productions</h3>
-    </footer>
-    <script type="module" src="src/app.js"></script>
+    <div id="root"></div>
+    
+    <script type="module" src="src/index.js"></script>
 </body>
 </html>
